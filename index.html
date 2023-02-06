@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,58 +11,290 @@
     Abhijeet Hiwale | Full Stack Java Developer
   </title>
 
-  
+
 </head>
 
-<body>
+<!-- <body>
   <div id="nav-menu">
     <div class="nav" role="navigation">
-      <ul class="nav__items" >
-      <li class="nav__item">
-        <a href="#home" class="nav-link home">ABHI</a>
-      </li>
-    </ul>
-  </div>
+      <ul class="nav__items">
+        <li class="nav__item">
+          <a href="#home" class="nav-link home">ABHI</a>
+        </li>
+      </ul>
+    </div>
     <div class="nav" role="navigation">
-      <ul class="nav__items" >
+      <ul class="nav__items">
         <li class="nav__item"><a href="#home" class="nav-link home">Home</a></li>
         <li class="nav__item"><a href="#about" class="nav-link about">About</a></li>
         <li class="nav__item"><a href="#skill" class="nav-link skills">Skills</a></li>
         <li class="nav__item"><a href="#projects" class="nav-link projects">Projects</a></li>
         <li class="nav__item"><a href="#contact" class="nav-link contact">Contact</a></li>
-        <!-- <li class="nav__item"><a href="#resume" class="nav-link resume">Clients</a></li> -->
       </ul>
     </div>
   </div>
   <div id="home">
-    <!-- <div class="header__text-box row"> -->
-      <!-- <div class="header__text"> -->
-        <!-- <h1 id="user-detail-name" class="heading-primary">  -->
-          <!-- Replace the following name with your name -->
-          <!-- <span>Abhijeet Hiwale</span> -->
-        <!-- </h1> -->
-        <!-- Put a small paragraph about yourself -->
-        <!-- <p id="user-detail-intro">A Full Stack Java Developer</p>
-        <a href="#contact" class="btn btn--orange">Get in touch</a>
-      </div> -->
-    <!-- </div> -->
     <div class="header__text-box row">
-      
       <div class="header__text">
         <div id="user-detail-name" class="heading-primary"><span>Abhijeet Hiwale</span></div>
-      <div id="user-detail-intro">A Full Stack Java Developer</div>
+        <div id="user-detail-intro">A Full Stack Java Developer</div>
       </div>
     </div>
-    
+
   </div>
   <div id="about" class="about_section">
-    
   </div>
-  <div id="skills"></div>
+  <div id="skills">
+  </div>
   <div id="projects"></div>
   <div id="contact"></div>
-  
-</body>
 
+</body> -->
+
+<body>
+
+  <!-- ***** Header ***** -->
+  <div>
+    <header class="header" role="banner" id="top">
+      <div class="row">
+        <nav class="nav" role="navigation">
+          <ul class="nav__items">
+            <li class="nav__item">
+              <a href="#about" class="nav__link">About</a>
+            </li>
+            <li class="nav__item"><a href="#skill" class="nav__link">Skills</a></li>
+            <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
+            <!-- <li class="nav__item"><a href="#clients" class="nav__link">Clients</a></li> -->
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header__text-box row">
+        <div class="header__text">
+          <h1 class="heading-primary">
+            <!-- Replace the following name with your name -->
+            <span>Abhijeet Hiwale</span>
+          </h1>
+          <!-- Put a small paragraph about yourself -->
+          <p>A Full Stack Java Developer</p>
+          <a href="#contact" class="btn btn--orange">Get in touch</a>
+        </div>
+      </div>
+    </header>
+  </div>
+
+  <main role="main">
+    <section class="about" id="about">
+      <div class="row">
+        <h2>About Me</h2>
+        <div class="about__content">
+          <div class="about__text">
+            <!-- Replace the below paragraph with info about yourself -->
+            <p>
+              Practical and detail-oriented Full Stack Java Developer with a keen interest in solving unique problems with the help of data structures and algorithms. I enjoy creating user-friendly applications. I am a self-motivated team man who is ardent in solving diverse problems across any given environment.
+            </p>
+            <!-- Provide a link to your resume -->
+            <a href="https://drive.google.com/file/d/112BrHZEOxHVOYoBBgOghSrsqtlaUQE3F/view?usp=share_link" target="blank" class="btn">My Resume</a>
+          </div>
+
+          <div class="about__photo-container">
+            <!-- Add a nice photo of yourself -->
+            <img class="about__photo" id="profile_pic" src="./images/profile-pic.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Services -->
+    <section id="services" class="text-center">
+      <div class="container">
+          <div class="row">
+              <div class="col-md-12">
+                  <h2>What I Do</h2>
+                  <div class="spacer-10"></div>
+                  <div class="col-md-4 wp2">
+                      <div class="icon"><i class="fa fa-laptop"></i></div>
+                      <h3>Design</h3>
+                      <p>Design isn't just what a product looks like and feels like on the outside. Design encompasses the internal functionality of a product as well as the overall user experience. I strive to design interfaces and experiences that people can enjoy on all digital mediums.
+                      </p>
+                  </div>
+                  <div class="col-md-4 wp2 delay-025s">
+                      <div class="icon"><i class="fa fa-code"></i></div>
+                      <h3>Development</h3>
+                      <p>With a strong foundation in computer science, I'm passionate about design and development, and interested in software app development. As I grow as a developer, I hope to write clean, readable code that can be used by others and leveraged to create beautiful software.</p>
+                  </div>
+                  <div class="col-md-4 wp2 delay-05s">
+                      <div class="icon"><i class="fa fa-lightbulb-o"></i></div>
+                      <h3>Performance</h3>
+                      <p>As a developer, I understand the importance of optimized performance and always strive to create software that runs smoothly and quickly, delivering a seamless user experience. To achieve this, I continually monitor and test the performance of my code, making optimizations and improvements where necessary to ensure the best possible outcome.</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+    <!-- Services -->
+    <section class="about" id="skill">
+      <div class="row">
+        <h2>Skills</h2>
+        <div id="skills">
+          <button class="skl-btn">
+            <img src="images/icons8-html-5-500.png" alt="">
+            <p>HTML</p>
+          </button>
+          <button class="skl-btn">
+            <img src="images/css3.png" alt="">
+            <p>CSS</p>
+          </button>
+          <button class="skl-btn">
+            <img src="images/javas.png" alt="">
+            <p>Javascript</p>
+          </button>
+          <button class="skl-btn">
+            <img src="images/java (2).png" alt="">
+            <p>Java</p>
+          </button>
+          <button class="skl-btn">
+            <img src="images/spring.png" alt="">
+            <p>Spring</p>
+          </button>
+          <button class="skl-btn">
+            <img src="images/sql.png" alt="">
+            <p>SQL</p>
+          </button>
+          <!-- <button class="skl-btn">
+            <img src="images/aws.png" alt="">
+            <p>AWS</p>
+          </button> -->
+          
+        </div>
+      </div>
+    </section>
+    <!-- ***** projects ***** -->
+
+    <section class="projects" id="projects">
+      <div class="row">
+        <h2>My Projects</h2>
+        <div class="projects__boxes">
+
+          <!-- Each div with the projects__box class is a project. -->
+
+          <div class="projects__box">
+            <div class="projects__text">
+              <h3>AJIO Clone</h3>
+              <p>An E-commerce website for purchasing clothings & footwears.</p>
+              <ul class="projects__list">
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+                <li>Material UI</li>
+              </ul>
+
+              <div class="projects__links">
+                <a href="https://rad-wisp-02436f.netlify.app/" target="_blank" class="link__text">
+                  Visit Site <span>&rarr;</span>
+                </a>
+                <a href="https://github.com/Abhii-07/Ajio-Clone" title="View Source Code" target="_blank">
+                  <img src="./images/github.svg" class="projects__code" alt="GitHub">
+                </a>
+              </div>
+            </div>
+            <div class="projects__image-box">
+              <img src="./images/ajio-clone-pic.png" class="projects__image" alt="Project 1" />
+            </div>
+          </div>
+          <div class="projects__box">
+            <div class="projects__text">
+              <h3>SkinStore - Clone</h3>
+              <p>An E-commerce website for purchasing Skincare and Beauty products</p>
+              <ul class="projects__list">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Material UI</li>
+              </ul>
+
+              <div class="projects__links">
+                <a href="https://lighthearted-melba-894d29.netlify.app/" target="_blank" class="link__text">
+                  Visit Site <span>&rarr;</span>
+                </a>
+                <a href="https://github.com/Abhii-07/SkinStore.com-Clone" title="View Source Code" target="_blank">
+                  <img src="./images/github.svg" class="projects__code" alt="GitHub">
+                </a>
+              </div>
+            </div>
+            <div class="projects__image-box">
+              <img src="./images/Skinstore.png" class="projects__image" alt="Project 1" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ***** About ***** -->
+
+    
+  </main>
+
+  <!-- ***** Contact ***** -->
+  <section class="contact" id="contact">
+    <h1 style="text-align: center; font-size: 100px;">Need A Developer?</h1>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="row">
+      <h2>Get in Touch</h2>
+      <div class="contact__info">
+        <p>
+          Are you looking for a fast-performing and user-friendly website to
+          represent your product or business? or looking for any kind of
+          consultation? or want to ask questions? or have some advice for me
+          or just want to say "Hi 👋" in any case feel free to Let me know. I
+          will do my best to respond back. 😊 The quickest way to reach out to
+          me is via an email.
+        </p>
+        <!-- Replace the email with yours -->
+        <a href="mailto:abhijeethiwalemail@gmail.com" class="btn">abhijeethiwalemail@gmail.com</a>
+        <div id="cont">
+          <img src="./images/icons8-phone-50.png" alt="">
+          <p>(+91) 8999793436</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ***** Footer ***** -->
+
+  <footer role="contentinfo" class="footer">
+    <div class="row">
+      <!-- Update the links to point to your accounts -->
+      <ul class="footer__social-links">
+        <!-- <li class="footer__social-link-item">
+          <a href="https://twitter.com/nisarhassan12/" title="Link to Twitter Profile">
+            <img src="./images/twitter.svg" class="footer__social-image" alt="Twitter">
+          </a>
+        </li> -->
+        <li class="footer__social-link-item">
+          <a href="https://github.com/Prottay-Ray" title="Link to Github Profile" target="_blank">
+            <img src="./images/github.svg" class="footer__social-image" alt="Github">
+          </a>
+        </li>
+        <li class="footer__social-link-item">
+          <a href="https://www.linkedin.com/in/prottayray/" target="_blank">
+            <img src="./images/linkedin.svg" title="Link to Linkedin Profile" class="footer__social-image" alt="Linkedin">
+          </a>
+        </li>
+      </ul>
+      
+    </div>
+    <p style="margin-top: -30px;">Abhijeet Hiwale 2023 © </p>
+  </footer>
+
+  <a href="#top" class="back-to-top" title="Back to Top">
+    <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image"/>
+    
+  </a>
+  <script src="./index.js"></script>
+</body>
 </html>
 <script src="index.js"></script>
