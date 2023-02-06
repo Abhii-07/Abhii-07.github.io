@@ -361,10 +361,15 @@ body:not(.user-is-tabbing) a:focus {
 /* ----- Navigation ----- */
 /* --------------------------------------- */
 
+#nav-menu{
+    display: flex;
+    justify-content: space-around;
+}
 .nav {
     display: flex;
     justify-content: flex-end;
     padding: var(--gutter-normal) 0;
+    /* margin: 0px 50px 0px 50px; */
 }
 
 .nav__items {
