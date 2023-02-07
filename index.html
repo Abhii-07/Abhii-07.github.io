@@ -2,299 +2,615 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="shortcut icon" type="image/png" href="./images/profile-pic.png" />
-  <link rel="stylesheet" href="index.css" />
-  <!-- Put your site title here -->
-  <title>
-    Abhijeet Hiwale | Full Stack Java Developer
-  </title>
-
-
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abhijeet Hiwale portfolio</title>
+  <link rel="shortcut icon" href="./img/profile-pic.png" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+  <script src="https://kit.fontawesome.com/a5ba336115.js" crossorigin="anonymous"></script>
 </head>
 
-<!-- <body>
-  <div id="nav-menu">
-    <div class="nav" role="navigation">
-      <ul class="nav__items">
-        <li class="nav__item">
-          <a href="#home" class="nav-link home">ABHI</a>
-        </li>
-      </ul>
-    </div>
-    <div class="nav" role="navigation">
-      <ul class="nav__items">
-        <li class="nav__item"><a href="#home" class="nav-link home">Home</a></li>
-        <li class="nav__item"><a href="#about" class="nav-link about">About</a></li>
-        <li class="nav__item"><a href="#skill" class="nav-link skills">Skills</a></li>
-        <li class="nav__item"><a href="#projects" class="nav-link projects">Projects</a></li>
-        <li class="nav__item"><a href="#contact" class="nav-link contact">Contact</a></li>
-      </ul>
-    </div>
-  </div>
-  <div id="home">
-    <div class="header__text-box row">
-      <div class="header__text">
-        <div id="user-detail-name" class="heading-primary"><span>Abhijeet Hiwale</span></div>
-        <div id="user-detail-intro">A Full Stack Java Developer</div>
-      </div>
-    </div>
-
-  </div>
-  <div id="about" class="about_section">
-
-  </div>
-  <div id="skills">
-
-  </div>
-  <div id="projects">
-
-  </div>
-  <div id="contact">
-
-  </div>
-</body> -->
 <body>
- <header class="header" role="banner" id="top">
-    <div class="row">
-      <nav class="nav" role="navigation">
-        <ul class="nav__items">
+  <header class="header" id="header">
+    <nav class="nav container">
+      <!-- <a href="#" style=" font-style: italic; font-weight: lighter; font-size: small;" class="nav__logo">
+        Raushan
+      </a> -->
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list grid">
           <li class="nav__item">
-            <a href="#about" class="nav__link">About</a>
+            <a href="#home" class="nav__link active-link">
+              <i class="ri-home-7-line"></i> Home
+            </a>
           </li>
-          <li class="nav__item"><a href="#skill" class="nav__link">Skills</a></li>
-          <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
-          <!-- <li class="nav__item"><a href="#clients" class="nav__link">Clients</a></li> -->
+
           <li class="nav__item">
-            <a href="#contact" class="nav__link">Contact</a>
+            <a href="#about" class="nav__link">
+              <i class="ri-profile-line"></i> About me
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#skills" class="nav__link">
+              <i class="ri-trophy-line"></i> Skills
+            </a>
+          </li>
+
+          <li class="nav__item">
+            <a href="#qualification" class="nav__link">
+              <i class="ri-book-open-line"></i> Qualification
+            </a>
+          </li>
+
+          <li class="nav__item">
+            <a href="#projects" class="nav__link">
+              <i class="ri-image-line"></i> Projects
+            </a>
+          </li>
+
+          <li class="nav__item">
+            <a href="#statics" class="nav__link">
+              <i class="ri-pie-chart-line"></i> Statistics
+            </a>
+          </li>
+
+          <li class="nav__item">
+            <a href="#contact" class="nav__link">
+              <i class="ri-chat-3-line"></i> Contact
+            </a>
+
+          </li>
+          <li class="nav__item">
+            <a id="resume_navbar"
+              href="https://drive.google.com/file/d/1RTrtIqoyeBG_Td-M0VTs0HfQwqxXIDbV/view?usp=sharing"
+              class="resume__button" target="_blank" download class="">Resume<i class="ri-download-line"></i></a>
           </li>
         </ul>
-      </nav>
-    </div>
-    <div class="header__text-box row">
-      <div class="header__text">
-        <h1 class="heading-primary">
-          <!-- Replace the following name with your name -->
-          <span>Abhijeet Hiwale</span>
-        </h1>
-        <!-- Put a small paragraph about yourself -->
-        <p>A Full Stack Java Developer</p>
-        <a href="#contact" class="btn btn--orange">Get in touch</a>
+
+        <div class="nav__close" id="nav-close">
+          <i class="ri-close-line"></i>
+        </div>
       </div>
-    </div>
+
+      <div class="nav__buttons">
+        <i class="ri-moon-line change-theme" id="theme-button"></i>
+
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="ri-menu-4-line"></i>
+        </div>
+      </div>
+    </nav>
   </header>
-
-  <main role="main">
-
-    <section class="about" id="about">
-      <div class="row">
-        <h2>About Me</h2>
-        <div class="about__content">
-          <div class="about__text">
-            <!-- Replace the below paragraph with info about yourself -->
-            <p>
-              Practical and detail-oriented Full Stack Java Developer with a keen interest in solving unique problems with the help of data structures and algorithms. I enjoy creating user-friendly applications. I am a self-motivated team man who is ardent in solving diverse problems across any given environment.
+  <main class="main">
+    <section class="home section" id="home">
+      <div class="home_container container grid section__border">
+        <div class="home__data grid">
+          <h1 class="home__title">
+            Abhijeet Hiwale <br>Java Backend Developer
+          </h1>
+          <div class="home__blob grid">
+            <div class="home__perfil">
+              <img src="./img/profile-pic.png" alt="">
+            </div>
+            <img src="./img/shape-wawes.svg" alt="" class="home__shape-wawes">
+            <img src="./img/shape-circle.svg" alt="" class="home__shape-circle">
+          </div>
+          <ul class="home__social">
+            <a href="https://www.linkedin.com/in/abhijeethiwale/" class="home__social-link" target="_blank">
+              <i class="ri-linkedin-box-line"></i>
+            </a>
+            <a href="https://github.com/Abhii-07" class="home__social-link" target="_blank">
+              <i class="ri-github-line"></i>
+            </a>
+            <!-- <a href="https://www.hackerrank.com/raushanraj901" class="home__social-link" target="_blank">
+                            <i class="fa-brands fa-hackerrank"></i>
+                        </a> -->
+          </ul>
+        </div>
+        <div class="home__info" style="margin-top: 2rem;">
+          <div>
+            <h3 class="home__info-title">
+              PROFESSIONAL SUMMARY
+            </h3>
+            <p class="home__info-description">
+              A passionate JAVA Back-End Developer,
+              Dedicated to developing robust
+              applications that interact with
+              the Backend part of web applications.
+              Extensive expertise in website architecture,
+              design, and web design, and web API designs.
+              Problem-solving mindset with a goal to
+              optimize my application for better
+              stability and speed. Love to work
+              in a team.
             </p>
-            <!-- Provide a link to your resume -->
-            <a href="https://drive.google.com/file/d/112BrHZEOxHVOYoBBgOghSrsqtlaUQE3F/view?usp=share_link" target="blank" class="btn">My Resume</a>
-          </div>
-
-          <div class="about__photo-container">
-            <!-- Add a nice photo of yourself -->
-            <img class="about__photo" id="profile_pic" src="./images/profile-pic.png" alt="" />
           </div>
         </div>
-      </div>
-    </section>
-    <!-- Services -->
-    <section id="services" class="text-center">
-      <div class="container">
-          <div class="row">
-              <div class="col-md-12">
-                  <h2>What I Do</h2>
-                  <div class="spacer-10"></div>
-                  <div class="col-md-4 wp2">
-                      <div class="icon"><i class="fa fa-laptop"></i></div>
-                      <h3>Design</h3>
-                      <p>Design isn't just what a product looks like and feels like on the outside. Design encompasses the internal functionality of a product as well as the overall user experience. I strive to design interfaces and experiences that people can enjoy on all digital mediums.
-                      </p>
-                  </div>
-                  <div class="col-md-4 wp2 delay-025s">
-                      <div class="icon"><i class="fa fa-code"></i></div>
-                      <h3>Development</h3>
-                      <p>With a strong foundation in computer science, I'm passionate about design and development, and interested in software app development. As I grow as a developer, I hope to write clean, readable code that can be used by others and leveraged to create beautiful software.</p>
-                  </div>
-                  <div class="col-md-4 wp2 delay-05s">
-                      <div class="icon"><i class="fa fa-lightbulb-o"></i></div>
-                      <h3>Performance</h3>
-                      <p>As a developer, I understand the importance of optimized performance and always strive to create software that runs smoothly and quickly, delivering a seamless user experience. To achieve this, I continually monitor and test the performance of my code, making optimizations and improvements where necessary to ensure the best possible outcome.</p>
-                  </div>
-              </div>
+        <div class="home__info">
+          <div>
+            <h2 class="home__info-title">
+              HOURS OF CODING
+            </h2>
+            <p class="home__info-number">
+              1200+
+            </p>
           </div>
-      </div>
-  </section>
-    <!-- Services -->
-    <section class="about" id="skill">
-      <div class="row">
-        <h2>Skills</h2>
-        <div id="skills">
-          <button class="skl-btn">
-            <img src="images/icons8-html-5-500.png" alt="">
-            <p>HTML</p>
-          </button>
-          <button class="skl-btn">
-            <img src="images/css3.png" alt="">
-            <p>CSS</p>
-          </button>
-          <button class="skl-btn">
-            <img src="images/javas.png" alt="">
-            <p>Javascript</p>
-          </button>
-          <button class="skl-btn">
-            <img src="images/java (2).png" alt="">
-            <p>Java</p>
-          </button>
-          <button class="skl-btn">
-            <img src="images/spring.png" alt="">
-            <p>Spring</p>
-          </button>
-          <button class="skl-btn">
-            <img src="images/sql.png" alt="">
-            <p>SQL</p>
-          </button>
-          <!-- <button class="skl-btn">
-            <img src="images/aws.png" alt="">
-            <p>AWS</p>
-          </button> -->
-          
+          <div>
+            <h2 class="home__info-title">
+              COMPLETED PROJECTS
+            </h2>
+            <p class="home__info-number">
+              15+
+            </p>
+          </div>
         </div>
+        <a style="margin: auto; padding: 5px 20px; font-size: medium;" href="./Raushan_Raj_Resume.pdf"
+          class="resume__button" download class="">Resume <i class="ri-download-line"></i></a>
       </div>
     </section>
-    <!-- ***** projects ***** -->
+    <section class="about section" id="about">
+      <h2 class="section__title">About me</h2>
+      <div class="about_container container grid section__border">
+        <div class="about__content">
+          <h3 class="about__title">
+            Creative and diligent aspiring Full-Stack Developer
+            with a specialization in java backend. Possess excellent
+            knowledge in Java, Spring Boot, Hibernate, MySQL as well
+            as frontend technologies.
+            Enthusiastic, with a keen interest in building and
+            designing backend.
+            Ability to learn things quickly and capable of
+            working in a fast-paced and team-driven environment.
+            Looking forward to sharpening my skills in a challenging
+            environment.
+          </h3>
+        </div>
 
-    <section class="projects" id="projects">
-      <div class="row">
-        <h2>My Projects</h2>
-        <div class="projects__boxes">
+        
+      </div>
+    </section>
+    <section class="skills section" id="skills">
+      <h2 class="section__title">Skills</h2>
+      <div class="skills_container container grid section__border">
+        <div class="skills__content">
+          <h3 class="skills__title">
+            <i class="ri-braces-line"></i> Backend Developer
+          </h3>
+          <div class="skills__info">
+            <div class="skills__data">
+              <div class="skills__blob">
+                <img style="width: 60px;" src="./img/java-icon.svg" alt="skills image">
 
-          <!-- Each div with the projects__box class is a project. -->
-
-          <div class="projects__box">
-            <div class="projects__text">
-              <h3>AJIO Clone</h3>
-              <p>An E-commerce website for purchasing clothings & footwears.</p>
-              <ul class="projects__list">
-                <li>HTML5</li>
-                <li>CSS3</li>
-                <li>JavaScript</li>
-                <li>Material UI</li>
-              </ul>
-
-              <div class="projects__links">
-                <a href="https://rad-wisp-02436f.netlify.app/" target="_blank" class="link__text">
-                  Visit Site <span>&rarr;</span>
-                </a>
-                <a href="https://github.com/Abhii-07/Ajio-Clone" title="View Source Code" target="_blank">
-                  <img src="./images/github.svg" class="projects__code" alt="GitHub">
-                </a>
               </div>
+
+              <h3 class="skills__name">JAVA</h3>
             </div>
-            <div class="projects__image-box">
-              <img src="./images/ajio-clone-pic.png" class="projects__image" alt="Project 1" />
+
+            <div class="skills__data">
+              <div class="skills__blob">
+                <img style="width: 70px;" src="./img/springio-ar21.svg" alt="skills image">
+              </div>
+
+              <h3 class="skills__name">Spring Boot</h3>
             </div>
+
+            <div class="skills__data">
+              <div class="skills__blob">
+                <img style="width: 60px;" src="./img/mysql-official.svg" alt="skills image">
+              </div>
+
+              <h3 class="skills__name">SQL</h3>
+            </div>
+
+            <div class="skills__data">
+              <div class="skills__blob">
+                <img style="width: 50px;" src="./img/hibernate.svg" alt="skills image">
+              </div>
+
+              <h3 class="skills__name">Hibernet</h3>
+            </div>
+
           </div>
-          <div class="projects__box">
-            <div class="projects__text">
-              <h3>SkinStore - Clone</h3>
-              <p>An E-commerce website for purchasing Skincare and Beauty products</p>
-              <ul class="projects__list">
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>Material UI</li>
-              </ul>
-
-              <div class="projects__links">
-                <a href="https://lighthearted-melba-894d29.netlify.app/" target="_blank" class="link__text">
-                  Visit Site <span>&rarr;</span>
-                </a>
-                <a href="https://github.com/Abhii-07/SkinStore.com-Clone" title="View Source Code" target="_blank">
-                  <img src="./images/github.svg" class="projects__code" alt="GitHub">
-                </a>
+        </div>
+        <div class="skills__content">
+          <h3 class="skills__title">
+            <i class="ri-braces-line"></i> Frontend Developer
+          </h3>
+          <div class="skills__info">
+            <div class="skills__data">
+              <div class="skills__blob">
+                <img src="./img/html-1.svg" alt="skills image">
               </div>
+
+              <h3 class="skills__name">HTML</h3>
             </div>
-            <div class="projects__image-box">
-              <img src="./images/Skinstore.png" class="projects__image" alt="Project 1" />
+            <div class="skills__data">
+              <div class="skills__blob">
+                <img src="./img/css-3.svg" alt="skills image">
+              </div>
+
+              <h3 class="skills__name">CSS</h3>
+            </div>
+            <div class="skills__data">
+              <div class="skills__blob">
+                <img src="./img/logo-javascript.svg" alt="skills image">
+              </div>
+
+              <h3 class="skills__name">JavaScript</h3>
+            </div>
+            <div class="skills__data">
+              <div class="skills__blob">
+                <img style="width: 50px;" src="./img/git-alt.svg" alt="skills image">
+
+              </div>
+
+              <h3 class="skills__name">Git</h3>
             </div>
           </div>
         </div>
       </div>
     </section>
+    <section class="qualification section" id="qualification">
+      <h2 class="section__title">Qualification</h2>
+      <span class="section__subtitle">Education & Certifications</span>
+      <div class="qualification__container container grid section__border">
+        <div class="qualification__content">
+          <h3 class="qualification__title">
+            <i class="ri-pencil-ruler-2-line"></i> Education
+          </h3>
+          <div class="qualification__info">
+            <div>
+              <h3 class="qualification__name">
+                Full Stack Web Development
 
-    <!-- ***** About ***** -->
+              </h3>
+              <span class="qualification__country"> Masai School, Bangalore</span><br>
+              <span class="qualification__year">February 2022 - Present</span>
+            </div>
+            <!-- <div>
+              <h3 class="qualification__name">
+                BCA
+              </h3>
+              <span class="qualification__country">Christ College,
+                Pune
+              </span><br>
+              <span class="qualification__year">August 2015 - July 2019</span>
+            </div>
+            <div>
+              <h3 class="qualification__name">
+                Class 12 (Science)
+              </h3>
+              <span class="qualification__country">Dr. Ganga Rani Sinha College, Nawada
+              </span><br>
+              <span class="qualification__year">May 2012 - June 2014</span>
+            </div> -->
+          </div>
+        </div>
+        <!-- <div class="qualification__content">
+          <h3 class="qualification__title">
+            <i class="ri-award-fill"></i> Certifications
+          </h3>
+          <div class="qualification__info">
+            <div>
+              <h3 class="qualification__name">
+                Android
+              </h3>
+              <span class="qualification__country">Numitech Solutions, Ludhiana
+              </span>
+            </div>
+            <div>
+              <h3 class="qualification__name">
+                Python
+              </h3>
+              <span class="qualification__country">Numitech Solutions, Ludhiana
+              </span>
+            </div>
+            <div>
+              <h3 class="qualification__name">
+                C, C++
+              </h3>
+              <span class="qualification__country">GGI, Ludhiana
+              </span>
+            </div>
+            <div>
+              <h3 class="qualification__name">
+                HTML, CSS
+              </h3>
+              <span class="qualification__country">GGI, Ludhiana
+              </span>
+            </div>
+          </div>
+        </div> -->
+      </div>
+      <img src="./img/shape-circle.svg" alt="qualification image" class="qualification__img">
+    </section>
+    <section class="projects section" id="projects">
+      <h2 class="section__title">Projects</h2>
+      <span class="section__subtitle">Most recent work</span>
+      <div class="container section__border">
+        <div class="projects_container swiper">
+          <div class="swiper-wrapper">
+            <div class="projects__content swiper-slide">
+              <img src="./img/java project tripy.png" alt="project img" class="projects__img">
+              <div class="swiper-slide">
+                <div class="discrption">
+                  <span class="projects__subtitle">Online Trip Management System</span>
+                  <h1 class="projects__title">Java Backend </h1>
+                  <h4>Description</h4>
+                  <p>A Collabrative Project Consisting
+                    Of 5 Developer Depicting the
+                    implementation of the
+                    Trip Managment Platform
+                    like MakeMyTrip or Yatra.
+                    And my Responsibilities was to
+                    develope Admin API
+                    with CRUD Operations.
+                  </p>
+                </div>
 
-    
+                <div class="projects__show">
+                  <div>
+                    <a href="https://github.com/naveenSaini1/pumped-pot-3496" class="projects__button" target="_blank">
+                      GitHub <i class="ri-github-line"></i>
+                    </a>
+                  </div>
+                  <div>
+                    <a href="https://drive.google.com/file/d/1Pfd2O2ibSGJpidOag7zMBCnl2tbt4m7w/view"
+                      class="projects__button" target="_blank">
+                      View demo <i class="ri-arrow-right-line"></i>
+                    </a>
+                  </div>
+                  <p></p>
+                </div>
+                <div class="tech_stack">
+                  <h4>Tech Stack</h4><br>
+                  <p>JAVA | Spring Boot | Hibernate | MySQL | Swagger UI
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="projects__content swiper-slide">
+              <img src="./img/project1.png" alt="project img" class="projects__img">
+              <div class="swiper-slide">
+                <div class="discrption">
+                  <span class="projects__subtitle">Ecommerce website</span>
+                  <h1 class="projects__title">Myntra Clone</h1>
+                  <h4>Discription</h4>
+                  <p>Myntra provides a number of Internet-based
+                    services through the Platform. One such
+                    Service enables Users to purchase original
+                    merchandise such as clothing, footwear and
+                    accessories from various fashion and
+                    lifestyle brands (collectively, "Products").
+                  </p>
+                </div>
+                <div class="projects__show">
+                  <div>
+                    <a href="https://github.com/raushanraj901/Myntra-Clone" class="projects__button" target="_blank">
+                      GitHub <i class="ri-github-line"></i>
+                    </a>
+                  </div>
+                  <div>
+                    <a href="https://ec-myntra-clone.netlify.app/" class="projects__button" target="_blank">
+                      View demo <i class="ri-arrow-right-line"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="tech_stack">
+                  <h4>Tech Stack</h4><br>
+                  <p>HTML5 | CSS3 | Java Script | Local Storage
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="projects__content swiper-slide">
+              <img src="./img/project2.png" alt="project img" class="projects__img">
+              <div class="swiper-slide">
+                <div class="discrption">
+                  <span class="projects__subtitle">Malaysia's startup</span>
+                  <h1 class="projects__title">Kindmeal Clone</h1>
+                  <h4>Description</h4>
+                  <p>We are given a task to make a functional
+                    clone website of The World's 1st
+                    Meat-Free Lifestyle Platform
+                    KindMeal.my. KindMeal.my is a
+                    Malaysia startup Founded by
+                    Andy K oh in 2008, PetFinder.
+                  </p>
+                </div>
+
+                <div class="projects__show">
+                  <div>
+                    <a href="https://github.com/raushanraj901/Kindmeal-Clone" class="projects__button" target="_blank">
+                      GitHub <i class="ri-github-line"></i>
+                    </a>
+                  </div>
+                  <div>
+                    <a href="https://fantastic-horse-7681f8.netlify.app" class="projects__button" target="_blank">
+                      View demo <i class="ri-arrow-right-line"></i>
+                    </a>
+                  </div>
+                  <p></p>
+                </div>
+                <div class="tech_stack">
+                  <h4>Tech Stack</h4><br>
+                  <p>HTML5 | CSS3 | Java Script | Local Storage
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next">
+            <i class="ri-arrow-right-s-line"></i>
+          </div>
+          <div class="swiper-button-prev">
+            <i class="ri-arrow-left-s-line"></i>
+          </div>
+
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+    <section class="statics section" id="statics">
+      <h2 class="section__title">Statics</h2>
+      <span class="section__subtitle">My contribution</span>
+      <div class="statics__container container grid section__border">
+        <div class="statics__info">
+          <div class="statics__data">
+            <div class="statics__blob">
+              <h2>1200+</h2>
+            </div>
+            <h3 class="statics__name">Hours</h3>
+            <span class="statics__subtitle">Of Full Stack Coding</span>
+          </div>
+
+          <div class="statics__data">
+            <div class="statics__blob">
+              <h2>250+</h2>
+            </div>
+            <h3 class="statics__name">Hackerrank</h3>
+            <span class="statics__subtitle">Problems solved</span>
+          </div>
+          <div class="statics__data">
+            <div class="statics__blob">
+              <h2>300+</h2>
+            </div>
+            <h3 class="statics__name">Git</h3>
+            <span class="statics__subtitle">Commits</span>
+          </div>
+          <div class="statics__data">
+            <div class="statics__blob">
+              <h2>15+</h2>
+            </div>
+            <h3 class="statics__name">Projects</h3>
+            <span class="statics__subtitle">Done</span>
+          </div>
+          <div class="statics__data">
+            <div class="statics__blob">
+              <h2>100+</h2>
+            </div>
+            <h3 class="statics__name">Hours</h3>
+            <span class="statics__subtitle">Of Soft Skills Sessions</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- github section -->
+        <div class="container">
+          <div class="github-stats-list">
+            <h4 class="section__title github__status">Github Status</h4>
+
+            <div class="github__list">
+              <div class="github-stat github__calendar">
+                <img src="https://github-readme-streak-stats.herokuapp.com/?user=Abhii-07&theme=indian-flag"
+                  alt="Github Contributions" />
+              </div>
+              <div class="github-stat github__calendar">
+                <img
+                  src="https://github-readme-stats.vercel.app/api?username=Abhii-07&theme=flag-india&show_icons=true&count_private=true"
+                  alt="Github Status" />
+              </div>
+              <div class="github-stat github__calendar">
+                <h4>
+                  Abhijeet Hiwale's contribution calendar
+                </h4>
+                <img src="https://ghchart.rshah.org/Abhii-07" alt="Git Calendar"
+                  style="width: 100%; height: 100%; margin-top: 2vh; padding: .2rem;" />
+              </div>
+            </div>
+          </div>
+        </div>
+    <section class="contact section" id="contact">
+      <h2 class="section__title">Contact Me</h2>
+      <span class="section__subtitle">Get in touch</span>
+      <div class="contact__container container grid section__border">
+        <div class="contact__content">
+          <h3 class="contact__title">
+            <i class="ri-chat-3-line"></i>Talk to me
+          </h3>
+          <div class="contact__info">
+            <div class="contact__data">
+              <span class="contact__data-title">Mobile No </span>
+              <span class="contact__data-info">+91-8999793436</span>
+            </div>
+            <div class="contact__data">
+              <span class="contact__data-title">Email </span>
+              <span class="contact__data-info">abhijeethiwalemail@gmail.com </span>
+            </div>
+
+          </div>
+        </div>
+        <div class="contact__content">
+          <h3 class="contact__title">
+            <i class="ri-send-plane-line"></i> Write your message
+          </h3>
+          <form action="" class="contact__form" id="contact-form">
+            <div class="contact__form-div">
+              <label class="contact__form-tag">Name</label>
+              <input type="text" name="user_name" required placeholder="Write your name" class="contact__form-input"
+                id="contact-name">
+            </div>
+
+            <div class="contact__form-div">
+              <label class="contact__form-tag">Mail</label>
+              <input type="email" name="user_email" required placeholder="Write your email" class="contact__form-input"
+                id="contact-email">
+            </div>
+
+            <div class="contact__form-div contact__form-area">
+              <label class="contact__form-tag">Messages</label>
+              <textarea name="user_message" placeholder="Write your messages" id="contact-message"
+                class="contact__form-input"></textarea>
+            </div>
+            <p class="contact__status" id="contact-status"></p>
+            <button type="submit" class="contact__button">
+              Submit <i class="ri-arrow-right-up-line"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
   </main>
-
-  <!-- ***** Contact ***** -->
-  <section class="contact" id="contact">
-    <h1 style="text-align: center; font-size: 100px;">Need A Developer?</h1>
-  </section>
-
-  <section class="contact" id="contact">
-    <div class="row">
-      <h2>Get in Touch</h2>
-      <div class="contact__info">
-        <p>
-          Are you looking for a fast-performing and user-friendly website to
-          represent your product or business? or looking for any kind of
-          consultation? or want to ask questions? or have some advice for me
-          or just want to say "Hi 👋" in any case feel free to Let me know. I
-          will do my best to respond back. 😊 The quickest way to reach out to
-          me is via an email.
-        </p>
-        <!-- Replace the email with yours -->
-        <a href="mailto:abhijeethiwalemail@gmail.com" class="btn">abhijeethiwalemail@gmail.com</a>
-        <div id="cont">
-          <img src="./images/icons8-phone-50.png" alt="">
-          <p>(+91) 8999793436</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ***** Footer ***** -->
-
-  <footer role="contentinfo" class="footer">
-    <div class="row">
-      <!-- Update the links to point to your accounts -->
-      <ul class="footer__social-links">
-        <!-- <li class="footer__social-link-item">
-          <a href="https://twitter.com/nisarhassan12/" title="Link to Twitter Profile">
-            <img src="./images/twitter.svg" class="footer__social-image" alt="Twitter">
-          </a>
-        </li> -->
-        <li class="footer__social-link-item">
-          <a href="https://github.com/Prottay-Ray" title="Link to Github Profile" target="_blank">
-            <img src="./images/github.svg" class="footer__social-image" alt="Github">
-          </a>
+  <footer class="footer">
+    <div class="footer__container container">
+      <h1 class="footer__title">Abhijeet</h1>
+      <p>Java Backend Developer</p>
+      <ul class="footer__list">
+        <li>
+          <a href="#home" class="footer__link">Home</a>
         </li>
-        <li class="footer__social-link-item">
-          <a href="https://www.linkedin.com/in/prottayray/" target="_blank">
-            <img src="./images/linkedin.svg" title="Link to Linkedin Profile" class="footer__social-image" alt="Linkedin">
-          </a>
+        <li>
+          <a href="#skills" class="footer__link">Skills</a>
+        </li>
+        <li>
+          <a href="#projects" class="footer__link">Projects</a>
         </li>
       </ul>
-      
+      <ul class="footer__social">
+        <a href="https://www.linkedin.com/in/abhijeethiwale/" target="_blank" class="footer__social-link">
+          <i class="ri-linkedin-box-fill"></i>
+        </a>
+        <a href="https://github.com/Abhii-07" target="_blank" class="footer__social-link">
+          <i class="ri-github-fill"></i>
+        </a>
+        <a href="" target="_blank" class="footer__social-link">
+          <i class="ri-link"></i>
+        </a>
+      </ul>
+      <span class="footer__copy">
+        Created by Abhijeet Hiwale | &#169; 2023 All copyright reserved.
+      </span>
     </div>
-    <p style="margin-top: -30px;">Abhijeet Hiwale 2023 © </p>
   </footer>
-
-  <a href="#top" class="back-to-top" title="Back to Top">
-    <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image"/>
-    
+  <a href="#" class="scrollup" id="scroll-up">
+    <i class="ri-arrow-up-line"></i>
   </a>
 </body>
+
 </html>
-<script src="index.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script src="./js/swiper-bundle.min.js"></script>
+<script src="./js/main.js"></script>
+<script src="./js/scrollreveal.min.js"></script>
