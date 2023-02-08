@@ -238,7 +238,7 @@ body.dark-theme {
     gap: 2rem 3rem;
 }
 
-.nav__link{
+.nav-link home,nav-link about,nav-link skills,nav-link projects,nav-link contact,nav-link resume{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -247,10 +247,10 @@ body.dark-theme {
     color: var(--text-color-light);
     transition: color .3s;
 }
-.nav__link:hover{
+.nav-link home,nav-link about,nav-link skills,nav-link projects,nav-link contact,nav-link resume:hover{
     color: var(--title-color);
 }
-.nav__link i{
+.nav-link home,nav-link about,nav-link skills,nav-link projects,nav-link contact,nav-link resume i{
     font-size: 1.25rem;
 }
 svg{
