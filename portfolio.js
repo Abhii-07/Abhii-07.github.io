@@ -44,7 +44,7 @@ const showMenu = ( toggleId, navId ) => {
   /*===== COPY Email =====*/
   const copy = document.getElementById( "copy" );
   copy.addEventListener( "click", () => {
-    navigator.clipboard.writeText( "handalvijay9588@gmail.com" );
+    navigator.clipboard.writeText( "abhijeethiwalemail@gmail.com" );
     copy.innerHTML = "copied";
     setTimeout( () => {
       copy.innerHTML = null;
