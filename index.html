@@ -1,17 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
 </head>
+
 <body>
-  <div id="nav-menu">Nav</div>
-  <div id="home">Home</div>
-  <div id="about" class="about section">About</div>
-  <div id="skills">Skills</div>
-  <div id="projects">Projects</div>
-  <div id="contact">Contacts</div>
+  <nav id="nav-menu">
+    <a class="nav-link home" href="#home">Home</a>
+    <a class="nav-link about" href="#about">About</a>
+    <a class="nav-link skills" href="#skills">Skills</a>
+    <a class="nav-link projects" href="#projects">Projects</a>
+    <a class="nav-link contact" href="#contact">Contact</a>
+    <a class="nav-link resume" href="#resume" id="resume-link-1">Resume</a>
+  </nav>
+  
+  <section id="home">
+    <img class="home-img" src="img/profile-pic.png" alt="Professional photo">
+    <div id="user-detail-name">Abhijeet Hiwale</div>
+    <div id="user-detail-intro">Formal introduction</div>
+    <a href="#resume" id="resume-link-2">
+      <button id="resume-button-2">View Resume</button>
+    </a>
+  </section>
+  
+  <section id="about" class="about section">
+    <!-- About content -->
+  </section>
+  
+  <section id="skills">
+    <div class="skills-card">
+      <img class="skills-card-img" src="img/profile-pic.png" alt="Skill image">
+      <div class="skills-card-name">Name</div>
+    </div>
+    <!-- Add more skills cards as needed -->
+  </section>
+  
+  <section id="projects">
+    <div class="project-card">
+      <img src="path/to/project.jpg" alt="Project image">
+      <div class="project-title">Title</div>
+      <div class="project-description">Description</div>
+      <div class="project-tech-stack">Tech stack used</div>
+      <a class="project-github-link" href="github-repository-link">GitHub repository</a>
+      <a class="project-deployed-link" href="deployed-link-or-video">Deployed link or video</a>
+    </div>
+    <!-- Add more project cards as needed -->
+  </section>
+  
+  <section id="contact">
+    <a id="contact-github" href="github-profile-link">GitHub</a>
+    <a id="contact-linkedin" href="linkedin-profile-link">LinkedIn</a>
+    <div id="contact-phone">Phone number</div>
+    <div id="contact-email">Email address</div>
+  </section>
+  
+  <section id="resume">
+    <!-- Resume content -->
+    <button id="resume-button-1">Download Resume</button>
+  </section>
+  
+  <div id="github-streak-stats" class="github-stats">
+    <!-- GitHub streak stats -->
+  </div>
+  
+  <div id="github-top-langs" class="github-stats">
+    <!-- GitHub top languages -->
+  </div>
+  
+  <div id="github-stats-card" class="github-stats">
+    <!-- GitHub stats card -->
+  </div>
+  
+  
+  </div>
 </body>
+
 </html>
