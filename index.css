@@ -136,12 +136,19 @@ nav-link resume i {
 
 /* Home */
 #home {
-    text-align: center;
-    margin-top: 80px;
     width: 70%;
     margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
 }
 
+#home > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .home__info {
     display: grid;
     row-gap: 2rem;
@@ -155,45 +162,48 @@ nav-link resume i {
 }
 
 #user-detail-intro {
-    font-family: var(--title-font);
-    font-weight: 400;
-    font-size: medium;
-    color: var(--title-color);
-}
-
-#user-detail-intro {
-    font-family: var(--title-font);
-    font-weight: 400;
-    font-size: medium;
-    color: var(--title-color);
-    margin: auto;
-    padding-right: 4rem;
+    text-align: center;
+    font-size: var(--h1-font-size);
+    letter-spacing: .3px;
+    margin-bottom: .5rem;
     /* border:1px solid red; */
 }
 
 .home-img {
-    width: 190px;
-    height: 190px;
-    background: var(--gradient-color);
-    border-radius: 10rem;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
     /* border:1px solid red; */
-    margin: auto;
 }
+
+.home__social{
+    margin-top: 10px;
+}
+
 
 
 /* About */
 #about {
     text-align: center;
-    margin-top: 100px;
+    margin: 100px auto;
     width: 50%;
-    margin: auto;
+}
+
+.about-title {
+    padding: 15px;
+    text-decoration: underline;
+}
+
+#profile-info{
+    margin: 20px auto;
+}
+
+#resume-button-2{
+    margin: 50px;
+    padding: 5px 20px;
+    font-size: medium;
+    /* border:1px solid red; */
 }
 
 /* Skils */
-#skills{
+#skills {
     flex-wrap: wrap;
     text-align: center;
     margin: 100px auto;
@@ -201,12 +211,13 @@ nav-link resume i {
     /* border:1px solid red; */
 }
 
-.skills-title{
+.skills-title {
     /* border:1px solid red; */
     padding: 15px;
     text-decoration: underline;
 }
-#skills > div{
+
+#skills>div {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
@@ -215,82 +226,111 @@ nav-link resume i {
     /* border:1px solid red; */
 }
 
+.skills-card {
+    /* border: 1px solid red; */
+    margin: auto;
+    width: 80px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.skills-card-img{
+    height: 100px;
+    width: 100px;
+}
+
 /* Projects */
-.projects-title{
+.projects-title {
     padding: 15px;
     text-decoration: underline;
 }
-#projects > div{
+
+#projects>div {
     padding: 10px;
     /* border:1px solid red; */
     display: grid;
-    grid-template-columns: repeat(2,auto);
+    grid-template-columns: repeat(2, auto);
 }
 
-.project-card > img{
+.project-card>img {
     width: 500px;
     border-radius: .75rem;
     margin-bottom: 1.25rem;
     border: 1px solid rgb(247, 202, 119);
 }
 
+/* Github */
+.github-stats{
+    margin-top: 50px;
+}
+
 /* FOOTER */
 
-.footer__container{
+.footer__container {
     padding: 3rem 0 7rem;
     text-align: center;
 }
-.footer__title{
+
+.footer__title {
     font-size: var(--h1-font-size);
     font-weight: var(--font-semi-bold);
     margin-bottom: 1rem;
 }
+
 .footer__list,
-.footer__social{
+.footer__social {
     display: flex;
     justify-content: center;
 }
-.footer__list{
-   margin: 2.5rem 0; 
-   column-gap: 2.5rem;
+
+.footer__list {
+    margin: 2.5rem 0;
+    column-gap: 2.5rem;
 }
-.footer__link{
+
+.footer__link {
     color: var(--title-color);
 }
-.footer__link:hover{
+
+.footer__link:hover {
     text-decoration: underline;
 }
-.footer__social{
+
+.footer__social {
     column-gap: 1.25rem;
 }
-.footer__social-link{
+
+.footer__social-link {
     font-size: 1.25rem;
     color: var(--title-color);
     transition: transform .3s;
 }
-.footer__social-link:hover{
+
+.footer__social-link:hover {
     transform: translateY(-.15rem);
 }
-.footer__copy{
+
+.footer__copy {
     display: block;
     margin-top: 4.5rem;
     font-size: var(--small-font-size);
     color: var(--text-color-light);
 }
-::-webkit-scrollbar{
+
+::-webkit-scrollbar {
     width: .6rem;
     border-radius: .5rem;
-    background-color: hsl(207,4%,75%);
-}
-::-webkit-scrollbar-thumb{
-    background-color: hsl(207,4%,65%);
-    border-radius: .5rem;
-}
-::-webkit-scrollbar-thumb:hover{
-    background-color: hsl(207,4%,55%);
+    background-color: hsl(207, 4%, 75%);
 }
 
-.scrollup{
+::-webkit-scrollbar-thumb {
+    background-color: hsl(207, 4%, 65%);
+    border-radius: .5rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: hsl(207, 4%, 55%);
+}
+
+.scrollup {
     position: fixed;
     right: 1rem;
     bottom: -30%;
@@ -302,12 +342,14 @@ nav-link resume i {
     font-size: 1.1rem;
     color: var(--title-color);
     z-index: var(--z-tooltip);
-    transition: bottom .3s , transform .3s;
+    transition: bottom .3s, transform .3s;
     /* border: 1px solid red; */
 }
-.scrollup:hover{
+
+.scrollup:hover {
     transform: translateY(-.25rem);
 }
-.show-scroll{
+
+.show-scroll {
     bottom: 7.5rem;
 }
