@@ -51,6 +51,7 @@
     padding: 0;
     margin: 0;
     text-align: center;
+    background-color: #FFF0F5;
 }
 
 html {
@@ -63,6 +64,7 @@ body {
     background-color: var(--body-color);
     color: var(--text-color);
     transition: background .4s;
+    background-color: #FFF0F5;
 
 }
 
@@ -114,6 +116,7 @@ nav-link resume {
     font-size: var(--smaller-font-size);
     color: var(--text-color-light);
     transition: color .3s;
+    background-color: #FFF0F5;
 }
 
 .nav-link home,
@@ -123,6 +126,7 @@ nav-link projects,
 nav-link contact,
 nav-link resume:hover {
     color: var(--title-color);
+    background-color: #FFF0F5;
 }
 
 .nav-link home,
@@ -132,26 +136,42 @@ nav-link projects,
 nav-link contact,
 nav-link resume i {
     font-size: 1.25rem;
+    background-color: #FFF0F5;
 }
 
 /* Home */
 #home {
     width: 70%;
     margin: auto;
+    height: 500px;
     display: flex;
     justify-content: space-between;
     padding: 50px;
+    /* border: 1px solid red; */
 }
 
-#home > div {
+.home-img {
+    margin: auto;
+    height: 80%;
+    /* border:1px solid red; */
+}
+
+#home>div {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    /* border:1px solid red; */
 }
+
 .home__info {
-    display: grid;
-    row-gap: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    padding: 15px;
+    /* border:1px solid red; */
+    /* display: grid; */
+    /* row-gap: 2rem; */
 }
 
 #user-detail-name {
@@ -169,11 +189,8 @@ nav-link resume i {
     /* border:1px solid red; */
 }
 
-.home-img {
-    /* border:1px solid red; */
-}
 
-.home__social{
+.home__social {
     margin-top: 10px;
 }
 
@@ -191,11 +208,11 @@ nav-link resume i {
     text-decoration: underline;
 }
 
-#profile-info{
+#profile-info {
     margin: 20px auto;
 }
 
-#resume-button-2{
+#resume-button-2 {
     margin: 50px;
     padding: 5px 20px;
     font-size: medium;
@@ -232,7 +249,8 @@ nav-link resume i {
     width: 80px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
-.skills-card-img{
+
+.skills-card-img {
     height: 100px;
     width: 100px;
 }
@@ -259,35 +277,39 @@ nav-link resume i {
 
 
 /* Resume */
-#resume{
+#resume {
     margin: 20px auto;
     padding: 20px 0px 20px 0px;
     /* border:1px solid red; */
 }
-#resume-title{
+
+#resume-title {
     font-size: 50px;
     text-align: center;
     /* border:1px solid red; */
 }
 
-#resume-button-1{
+#resume-button-1 {
     padding: 10px;
     margin-top: 25px;
     /* border:1px solid red; */
 }
+
 /* Contact */
-#contact-title{
+#contact-title {
     padding: 15px;
     text-decoration: underline;
 }
-#contact >  div{
+
+#contact>div {
     margin-top: 20px;
     margin-bottom: 20px;
     display: flex;
     justify-content: space-evenly;
 }
+
 /* Github */
-.github-stats{
+.github-stats {
     margin-top: 50px;
 }
 
@@ -382,3 +404,63 @@ nav-link resume i {
 .show-scroll {
     bottom: 7.5rem;
 }
+
+@media only screen and (min-width:321px) and (max-width:768px) {
+    #home {
+        width: 70%;
+        margin: auto;
+        height: 500px;
+        display: flex;
+        flex-direction:column ;
+        justify-content: space-between;
+        padding: 50px;
+        /* border: 1px solid red; */
+    }
+
+    .home-img {
+        margin: 20px auto;
+        height: 80%;
+        /* border:1px solid red; */
+    }
+
+    .home__info {
+        display: flex;flex-direction: column;
+        justify-content: space-evenly;
+        margin-top: 20px;
+        padding: 15px;
+        /* border:1px solid red; */
+        /* display: grid; */
+        /* row-gap: 2rem; */
+       
+    }
+
+    /* .home__info {
+        text-decoration: none;
+        color: rgba(255, 255, 255, 0.8);
+        background: rgb(145, 92, 182);
+        padding: 15px 40px;
+        border-radius: 4px;
+        font-weight: normal;
+        text-transform: uppercase;
+        transition: all 0.2s ease-in-out;
+      } */
+      
+      /* .home__info:hover {
+        color: rgba(255, 255, 255, 1);
+        box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
+      } */
+
+    #projects > div {
+        padding: 10px;
+        /* border:1px solid red; */
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+        gap: 30px;
+    }
+}
+
+/* Tablets */
+/* @media (min-width:769px) {
+    
+} */
+
