@@ -270,12 +270,33 @@ nav-link resume i {
     display: grid;
     grid-template-columns: repeat(2, auto);
 }
+.project-card{
+    padding: 10px;
+    margin-top: 15px;
+     /* border:1px solid red; */
+}
 
 .project-card>img {
     width: 500px;
     border-radius: .75rem;
     margin-bottom: 1.25rem;
     border: 1px solid rgb(247, 202, 119);
+}
+.project-title{
+    font-size: 25px;
+    text-decoration: underline;
+    color: black;
+}
+
+.project-description{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    margin-top: 15px;
+    /* border: 1px solid red; */
+}
+.project-tech-stack{
+    margin-top: 15px;
 }
 
 
