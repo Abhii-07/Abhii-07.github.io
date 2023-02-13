@@ -101,6 +101,9 @@ img {
     padding-inline: 1.5rem;
     border-radius: 3rem;
     transition: background .4s;
+    position: -webkit-sticky;
+	position: sticky;
+	top: 0;
 }
 
 .nav-link home,
@@ -405,7 +408,7 @@ nav-link resume i {
     bottom: 7.5rem;
 }
 
-@media only screen and (min-width:321px) and (max-width:768px) {
+@media only screen and (min-width:321px) and (max-width:850px) {
     #home {
         width: 70%;
         margin: auto;
