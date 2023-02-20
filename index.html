@@ -29,10 +29,10 @@
       <div id="user-detail-name">Abhijeet Hiwale</div>
       <div id="user-detail-intro">Java Backend Developer</div>
       <ul class="home__social">
-        <a href="https://www.linkedin.com/in/abhijeethiwale/" class="home__social-link" target="_blank">
+        <a href="https://www.linkedin.com/in/abhijeethiwale/" class="home__social-link"    target="_blank">
           <i class="ri-linkedin-box-line"></i>
         </a>
-        <a href="https://github.com/Abhii-07" class="home__social-link" target="_blank">
+        <a href="https://github.com/Abhii-07" class="home__social-link"  target="_blank">
           <i class="ri-github-line"></i>
         </a>
         <!-- <a href="https://www.hackerrank.com/raushanraj901" class="home__social-link" target="_blank">
@@ -48,8 +48,7 @@
   <section id="about" class="about section">
     <!-- About content -->
     <h1 class="about-title">About Me</h1>
-    <div id="profile-info">A passionate Java backend developer, with specialization in Java,Javascript Hibernate,
-      Spring, Spring Boot,SQL, RDBMS, and Rest API. Dedicated to developing robust applications that
+    <div id="profile-info">A passionate Java backend developer, with specialization in Java,Javascript Hibernate, Spring, Spring Boot,SQL, RDBMS, and Rest API. Dedicated to developing robust applications that
       interact with the
       backend part of web applications. Extensive expertise in website architecture, design, and web design, and web API
       designs. Problem-solving mindset with a goal to optimize my application for better stability and speed. Love to
@@ -221,11 +220,13 @@
     <img id="github-stats-card" class="github-stats" src="https://github-readme-stats.vercel.app/api?username=Abhii-07"
       alt="Github Status" />
     <!-- style="width: 50%; height: 100%; margin-top: 3vh; padding: .2rem;margin-bottom: 2vh;" -->
-    <!-- <img id="github-stats-calender" class="react-activity-calendar github-stats"
-      src="https://ghchart.rshah.org/Abhii-07" alt="Github Calender" /> -->
-    <div class="calendar react-activity-calendar">
-      Loading stuff Loading the data just for you.
-    </div>
+    <img id="github-stats-calender" class="react-activity-calendar github-stats" src="https://ghchart.rshah.org/Abhii-07"
+      alt="Github Calender" />
+      <img
+          id="github-streak-stats"
+          src="https://github-readme-streak-stats.herokuapp.com?user=ashishtripathy39"
+          alt="ashishtripathy39"
+        />
   </div>
 
   <hr style="width:80%;text-align:left;margin-left:0;margin: auto;">
@@ -238,7 +239,7 @@
     <a id="resume-button-1" href="./Abhijeet_Hiwale_Resume.pdf" target="_blank" download>Resume<i
         class="ri-download-line"></i></a>
   </section>
-
+  
   <hr style="width:80%;text-align:left;margin-left:0;margin: auto;">
   <section id="contact">
     <h1 id="contact-title">Contact Me</h1>
@@ -253,7 +254,7 @@
 
 
 
-
+ 
 
   <hr style="width:80%;text-align:left;margin-left:0;margin: auto;">
   <footer class="footer">
@@ -293,19 +294,3 @@
 <script src="./js/swiper-bundle.min.js"></script>
 <!-- <script src="./js/main.js"></script> -->
 <script src="./js/scrollreveal.min.js"></script>
-<script>
-  // GitHubCalendar(".calendar", "ashishtripathy39");
-  // or enable responsive functionality
-  GitHubCalendar(
-    ".calendar",
-    "Abhii-07",
-    { responsive: true },
-    {
-      proxy(username) {
-        return fetch(`https://your-proxy.com/github?user=${username}`);
-      },
-    }
-  )
-    .then((r) => r.text())
-    .catch((e) => console.log(e));
-</script>
