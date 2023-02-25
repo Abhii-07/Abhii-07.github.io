@@ -152,7 +152,13 @@ nav-link resume i {
     padding: 50px;
     /* border: 1px solid red; */
 }
-
+.user-info-about{
+    text-align: center;
+    font-size: var(--h1-font-size);
+    letter-spacing: .3px;
+    margin-bottom: .5rem;
+    /* border:1px solid red; */
+}
 .home-img {
     margin: auto;
     height: 80%;
@@ -184,13 +190,13 @@ nav-link resume i {
     margin-bottom: .5rem;
 }
 
-#user-detail-intro {
+/* #user-detail-intro {
     text-align: center;
     font-size: var(--h1-font-size);
     letter-spacing: .3px;
     margin-bottom: .5rem;
     /* border:1px solid red; */
-}
+} */
 
 
 .home__social {
@@ -207,6 +213,10 @@ nav-link resume i {
     padding: 50px;
     /* border: 1px solid red; */
     /* margin: 100px auto; */
+}
+
+#about > div:first-child{
+    font-size: 10px;
 }
 
 .about-title {
@@ -512,3 +522,32 @@ nav-link resume i {
     
 } */
 
+/* Hide the hamburger menu on desktop */
+.hamburger-menu {
+    display: none;
+  }
+  
+  /* Style the hamburger lines */
+  .hamburger-line {
+    width: 30px;
+    height: 3px;
+    background-color: black;
+    margin: 5px 0;
+  }
+  
+  /* Show the hamburger menu on mobile */
+  @media only screen and (max-width: 768px) {
+    .hamburger-menu {
+      display: block;
+      cursor: pointer;
+    }
+    /* Hide the navigation links */
+    #nav-menu {
+      display: none;
+    }
+    /* Show the navigation links when the hamburger menu is clicked */
+    #nav-menu.show {
+      display: block;
+    }
+  }
+  
