@@ -379,7 +379,7 @@ nav-link resume i {
 }
 
 .calendar.react-activity-calendar .contrib-column.table-column span {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     color: black;
 
 }
