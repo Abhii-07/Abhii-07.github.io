@@ -102,8 +102,8 @@ img {
     border-radius: 3rem;
     transition: background .4s;
     position: -webkit-sticky;
-	position: sticky;
-	top: 0;
+    position: sticky;
+    top: 0;
 }
 
 .nav-link home,
@@ -152,13 +152,15 @@ nav-link resume i {
     padding: 50px;
     /* border: 1px solid red; */
 }
-.user-info-about{
+
+.user-info-about {
     text-align: center;
     font-size: var(--h1-font-size);
     letter-spacing: .3px;
     margin-bottom: .5rem;
     /* border:1px solid red; */
 }
+
 .home-img {
     margin: auto;
     height: 80%;
@@ -196,10 +198,9 @@ nav-link resume i {
     letter-spacing: .3px;
     margin-bottom: .5rem;
     /* border:1px solid red; */
-} */
+}
 
-
-.home__social {
+*/ .home__social {
     margin-top: 10px;
 }
 
@@ -215,7 +216,7 @@ nav-link resume i {
     /* margin: 100px auto; */
 }
 
-#about > div:first-child{
+#about>div:first-child {
     font-size: 10px;
 }
 
@@ -237,10 +238,12 @@ nav-link resume i {
 
 .hover-item {
     transition: 0.3s;
-  }
-  .hover-item:hover {
+}
+
+.hover-item:hover {
     transform: translate(0, -10px);
-  }
+}
+
 /* Skils */
 #skills {
     flex-wrap: wrap;
@@ -273,9 +276,10 @@ nav-link resume i {
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     transition: 0.3s;
 }
+
 .skills-card:hover {
     transform: translate(0, -10px);
-  }
+}
 
 .skills-card-img {
     height: 100px;
@@ -294,10 +298,11 @@ nav-link resume i {
     display: grid;
     grid-template-columns: repeat(2, auto);
 }
-.project-card{
+
+.project-card {
     padding: 10px;
     margin-top: 15px;
-     /* border:1px solid red; */
+    /* border:1px solid red; */
 }
 
 .project-card>img {
@@ -306,20 +311,22 @@ nav-link resume i {
     margin-bottom: 1.25rem;
     border: 1px solid rgb(247, 202, 119);
 }
-.project-title{
+
+.project-title {
     font-size: 25px;
     text-decoration: underline;
     color: black;
 }
 
-.project-description{
+.project-description {
     width: 50%;
     margin: auto;
     text-align: center;
     margin-top: 15px;
     /* border: 1px solid red; */
 }
-.project-tech-stack{
+
+.project-tech-stack {
     margin-top: 15px;
 }
 
@@ -365,10 +372,16 @@ nav-link resume i {
     /* border: 1px solid red */
 }
 
-#github-stats-calender{
+#github-stats-calender {
     width: 80%;
     margin-top: 3vh;
     /* border: 1px solid red; */
+}
+
+.calendar.react-activity-calendar .contrib-column.table-column span {
+    border: 1px solid red;
+    color: black;
+
 }
 
 /* FOOTER */
@@ -469,7 +482,7 @@ nav-link resume i {
         margin: auto;
         height: 500px;
         display: flex;
-        flex-direction:column ;
+        flex-direction: column;
         justify-content: space-between;
         padding: 50px;
         /* border: 1px solid red; */
@@ -482,26 +495,27 @@ nav-link resume i {
     }
 
     .home__info {
-        display: flex;flex-direction: column;
+        display: flex;
+        flex-direction: column;
         justify-content: space-evenly;
         margin-top: 20px;
         padding: 15px;
         /* border:1px solid red; */
         /* display: grid; */
         /* row-gap: 2rem; */
-       
+
     }
 
     #about {
-    width: 90%;
-    text-align: center;
-    margin: 50px auto;
-    padding: 50px;
-    /* border: 1px solid red; */
-    /* margin: 100px auto; */
-}
+        width: 90%;
+        text-align: center;
+        margin: 50px auto;
+        padding: 50px;
+        /* border: 1px solid red; */
+        /* margin: 100px auto; */
+    }
 
-    #projects > div {
+    #projects>div {
         padding: 10px;
         /* border:1px solid red; */
         display: grid;
@@ -509,10 +523,10 @@ nav-link resume i {
         gap: 30px;
     }
 
-    #contact >  div{
+    #contact>div {
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly; 
+        justify-content: space-evenly;
         gap: 10px;
     }
 }
@@ -525,29 +539,30 @@ nav-link resume i {
 /* Hide the hamburger menu on desktop */
 .hamburger-menu {
     display: none;
-  }
-  
-  /* Style the hamburger lines */
-  .hamburger-line {
+}
+
+/* Style the hamburger lines */
+.hamburger-line {
     width: 30px;
     height: 3px;
     background-color: black;
     margin: 5px 0;
-  }
-  
-  /* Show the hamburger menu on mobile */
-  @media only screen and (max-width: 768px) {
+}
+
+/* Show the hamburger menu on mobile */
+@media only screen and (max-width: 768px) {
     .hamburger-menu {
-      display: block;
-      cursor: pointer;
+        display: block;
+        cursor: pointer;
     }
+
     /* Hide the navigation links */
     #nav-menu {
-      display: none;
+        display: none;
     }
+
     /* Show the navigation links when the hamburger menu is clicked */
     #nav-menu.show {
-      display: block;
+        display: block;
     }
-  }
-  
+}
