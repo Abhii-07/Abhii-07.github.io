@@ -51,7 +51,7 @@
     padding: 0;
     margin: 0;
     text-align: center;
-    background-color: #FFF0F5;
+    /* background-color: #FFF0F5; */
 }
 
 html {
@@ -90,17 +90,17 @@ img {
 }
 
 #nav-menu {
-    width: 80%;
+    width: 100%;
     margin: auto;
     height: calc(var(--header-height) + .5rem);
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: var(--body-color);
-    box-shadow: 0 4px 20px hsla(207, 24%, 35%, .1);
+    /* box-shadow: 0 4px 20px hsla(207, 24%, 35%, .1); */
     padding-inline: 1.5rem;
-    border-radius: 3rem;
-    transition: background .4s;
+    /* border-radius: 3rem; */
+    /* transition: background .4s; */
     position: -webkit-sticky;
     position: sticky;
     top: 0;
@@ -142,6 +142,27 @@ nav-link resume i {
     background-color: #FFF0F5;
 }
 
+/* Nav---------------------- */
+@media screen and (min-width: 600px) {
+    .nav__link {
+      display: block;
+      position: static;
+      width: auto;
+      margin-right: 20px;
+      background: none;
+    }
+  
+    .nav__link a {
+      display: inline-block;
+      padding: 15px 20px;
+    }
+  
+    .hamburger {
+      display: none;
+    }
+  }
+
+  
 /* Home */
 #home {
     width: 70%;
@@ -381,7 +402,11 @@ nav-link resume i {
 .calendar.react-activity-calendar .contrib-column.table-column span {
     /* border: 1px solid red; */
     color: black;
+}
 
+.calendar{
+    width: 90%;
+    margin: auto;
 }
 
 /* FOOTER */
@@ -551,18 +576,52 @@ nav-link resume i {
 
 /* Show the hamburger menu on mobile */
 @media only screen and (max-width: 768px) {
-    .hamburger-menu {
-        display: block;
-        cursor: pointer;
-    }
-
-    /* Hide the navigation links */
-    #nav-menu {
-        display: none;
-    }
-
-    /* Show the navigation links when the hamburger menu is clicked */
-    #nav-menu.show {
-        display: block;
-    }
+    /* Navvvvvvvvvvvvvvvvvvvvvvvvvvv */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+  }
+  
+  .logo {
+    font-size: 1.8rem;
+    color: rgb(5, 5, 116);
+    padding-left: 20px;
+  }
+  
+  .hamburger {
+    padding-right: 20px;
+    cursor: pointer;
+  }
+  
+  .hamburger .line {
+    display: block;
+    width: 40px;
+    height: 5px;
+    margin-bottom: 10px;
+    background-color: black;
+  }
+  
+  .nav__link {
+    position: fixed;
+    width: 94%;
+    top: 5rem;
+    left: 18px;
+    background-color: lightblue;
+  }
+  
+  .nav__link a {
+    display: block;
+    text-align: center;
+    padding: 10px 0;
+  }
+  
+  .nav__link a:hover {
+    background-color: lightcoral;
+  }
+  
+  .hide {
+    display: none;
+  }
 }

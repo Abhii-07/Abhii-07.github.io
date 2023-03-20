@@ -16,12 +16,21 @@
 
 <body>
   <nav id="nav-menu">
-    <a class="nav-link home" href="#home">Home</a>
-    <a class="nav-link about" href="#about">About</a>
-    <a class="nav-link skills" href="#skills">Skills</a>
-    <a class="nav-link projects" href="#projects">Projects</a>
-    <a class="nav-link contact" href="#contact">Contact</a>
-    <a class="nav-link resume" id="resume-button-1" href="#resume">Resume</a>
+    <a href="/" class="logo">ABHI</a>
+    <div class="hamburger">
+      <span class="line"></span>
+      <span class="line"></span>
+      <span class="line"></span>
+    </div>
+    <div class="nav__link hide">
+      <a class="nav-link home" href="#home">Home</a>
+      <a class="nav-link about" href="#about">About</a>
+      <a class="nav-link skills" href="#skills">Skills</a>
+      <a class="nav-link projects" href="#projects">Projects</a>
+      <a class="nav-link contact" href="#contact">Contact</a>
+      <a class="nav-link resume" id="resume-button-1" href="#resume">Resume</a>
+    </div>
+
   </nav>
 
   <section id="home">
@@ -202,10 +211,7 @@
       src="https://github-readme-stats.vercel.app/api/top-langs/?username=Abhii-07" alt="Git Top Langs" />
     <img id="github-stats-card" class="github-stats" src="https://github-readme-stats.vercel.app/api?username=Abhii-07"
       alt="Github Status" />
-    <!-- style="width: 50%; height: 100%; margin-top: 3vh; padding: .2rem;margin-bottom: 2vh;" -->
-    <!-- <img id="github-stats-calender" class="react-activity-calendar github-stats"
-      src="https://ghchart.rshah.org/Abhii-07" alt="Github Calender" />
-      <div class="react-activity-calendar"> -->
+
     <!-- Add your GitHub calendar heatmap code here -->
     <!-- <img id="github-stats-calender" class="react-activity-calendar github-stats"
       src="https://ghchart.rshah.org/Abhii-07" alt="Github Calender" /> -->
@@ -224,8 +230,9 @@
       href="https://drive.google.com/file/d/112BrHZEOxHVOYoBBgOghSrsqtlaUQE3F/view?usp=share_link"
       class="resume__button" download class="">Resume <i class="ri-download-line"></i></a> -->
 
-    <a id="resume-button-1" onclick="openResume()" href="./Abhijeet_Hiwale_Resume.pdf" target="_blank"
-      download>Resume<i class="ri-download-line"></i></a>
+    <a id="resume-button-1" onclick="openResume()" href="./Abhijeet_Hiwale_Resume.pdf" target="_blank" download>Resume<i
+        class="ri-download-line"></i></a>
+
   </section>
 
   <hr style="width:80%;text-align:left;margin-left:0;margin: auto;">
@@ -239,9 +246,6 @@
       <div id="contact-email"><i class="fa fa-envelope"></i> : abhijeethiwalemail@gmail.com</div>
     </div>
   </section>
-
-
-
 
 
   <hr style="width:80%;text-align:left;margin-left:0;margin: auto;">
@@ -284,6 +288,19 @@
 <script src="./js/scrollreveal.min.js"></script>
 <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
 <script>
+  function openResume() {
+    window.open("https://drive.google.com/file/d/112BrHZEOxHVOYoBBgOghSrsqtlaUQE3F/view?usp=share_link");
+  }
+
+  // Nav
+
+  const hamburger = document.querySelector('.hamburger');
+  const navLink = document.querySelector('.nav__link');
+
+  hamburger.addEventListener('click', () => {
+    navLink.classList.toggle('hide');
+  });
+
   GitHubCalendar(
     ".calendar",
     "Abhii-07",
@@ -297,7 +314,4 @@
     .then((r) => r.text())
     .catch((e) => console.log(e));
 
-  function openResume() {
-    window.open("https://drive.google.com/file/d/112BrHZEOxHVOYoBBgOghSrsqtlaUQE3F/view?usp=share_link");
-  }
 </script>
