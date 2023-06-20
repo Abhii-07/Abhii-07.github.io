@@ -229,7 +229,7 @@ nav-link resume i {
     letter-spacing: .3px;
     margin-bottom: .5rem;
     /* border:1px solid red; */
-}
+/* } */
 
 */ .home__social {
     margin-top: 10px;
@@ -252,6 +252,7 @@ nav-link resume i {
 }
 
 .about-title {
+    font-size: 30px;
     padding: 15px;
     text-decoration: underline;
 }
@@ -286,6 +287,7 @@ nav-link resume i {
 
 .skills-title {
     /* border:1px solid red; */
+    font-size: 30px;
     padding: 15px;
     text-decoration: underline;
 }
@@ -302,7 +304,7 @@ nav-link resume i {
 .skills-card {
     /* border: 1px solid red; */
     margin: 10px auto;
-    width: 80px;
+    width: 90px;
     padding: 10px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     transition: 0.3s;
@@ -319,11 +321,13 @@ nav-link resume i {
 
 /* Projects */
 
-.project-hero-img{
+.project-hero-img {
     height: 60%;
     width: 50%;
 }
+
 .projects-title {
+    font-size: 30px;
     padding: 15px;
     text-decoration: underline;
 }
@@ -387,7 +391,7 @@ nav-link resume i {
     padding: 10px;
     margin: auto;
     width: 8%;
-    border:1px solid rgb(198, 149, 149);
+    /* border:1px solid rgb(198, 149, 149); */
 
 }
 
