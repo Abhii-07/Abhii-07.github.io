@@ -105,28 +105,38 @@ let swiperProjects = new Swiper(".projects_container", {
 
  window.addEventListener('scroll',scrollUp)
 
- const themeButton = document.getElementById('theme-button')
- const darkTheme = 'dark-theme'
- const iconTheme = 'ri-sun-line'
+// ...
 
- const selectedTheme = localStorage.getItem('selected-theme')
- const selectedIcon = localStorage.getItem('selected-icon')
+const themeButton = document.getElementById('theme-button')
+const darkTheme = 'dark-theme'
+const iconTheme = 'uil-sun'
 
- const getCurrentTheme = ()=> document.body.classList.contains(darkTheme) ? 'dark' : 'light'
- const getCurrentIcon = ()=> themeButton.classList.contains(iconTheme) ? 'ri-moon-line' : 'ri-sun-line'
+// Previously selected topic (if user selected)
+const selectedTheme = localStorage.getItem('selected-theme')
+const selectedIcon = localStorage.getItem('selected-icon')
 
- if(selectedTheme){
-  document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme)
-  themeButton.classList[selectedIcon === 'ri-moon-line' ? 'add' : 'remove'](iconTheme)
- }
+// We obtain the current theme that the interface has by validating the dark-theme class
+const getCurrentTheme = () => document.body.classList.contains(darkTheme) ? 'dark' : 'light'
+const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ? 'uil-moon' : 'uil-sun'
 
- themeButton.addEventListener('click',()=>{
-  document.body.classList.toggle(darkTheme)
-  themeButton.classList.toggle(iconTheme)
+// We validate if the user previously chose a topic
+if (selectedTheme) {
+    // If the validation is fulfilled, we ask what the issue was to know if we activated or deactivated the dark
+    document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme)
+    themeButton.classList[selectedIcon === 'uil-moon' ? 'add' : 'remove'](iconTheme)
+}
 
-  localStorage.setItem('selected-theme',getCurrentTheme())
-  localStorage.setItem('selected-icon', getCurrentIcon())
- })
+// Activate / deactivate the theme manually with the button
+themeButton.addEventListener('click', () => {
+    // Add or remove the dark / icon theme
+    document.body.classList.toggle(darkTheme)
+    themeButton.classList.toggle(iconTheme)
+    // We save the theme and the current icon that the user chose
+    localStorage.setItem('selected-theme', getCurrentTheme())
+    localStorage.setItem('selected-icon', getCurrentIcon())
+})
+
+
 
  const scrollHelder = ()=>{
   const header = document.getElementById('header')
@@ -148,3 +158,25 @@ let swiperProjects = new Swiper(".projects_container", {
  sr.reveal(`skills__content:nth-child(1), .contact__content:nth-child(1)`, {origin: 'left'})
  sr.reveal(`skills__content:nth-child(2), .contact__content:nth-child(2)`, {origin: 'right'})
  sr.reveal(`qualification__content, .preficiences__card`, {interval: 100})
+
+
+
+ 
+/*==================== SKILLS ====================*/
+const skillsContent = document.getElementsByClassName("skills_content");
+skillsHeader = document.querySelectorAll(".skills_header");
+
+function toggleSkills() {
+    let itemClass = this.parentNode.className;
+
+    for (i = 0; i < skillsContent.length; i++) {
+        skillsContent[i].className = "skills_content skills_close";
+    }
+    if (itemClass == "skills_content skills_close") {
+        this.parentNode.className = "skills_content skills_open";
+    }
+}
+
+skillsHeader.forEach((element) => {
+    element.addEventListener('click', toggleSkills);
+})
