@@ -317,6 +317,12 @@ body.dark-theme {
 #skills{
     margin-top: 20px;
 }
+
+.skills-title {
+    font-size: 30px;
+    padding: 15px;
+    text-decoration: underline;
+}
 .skills-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -371,10 +377,16 @@ body.dark-theme {
 /* Media query for responsiveness */
 @media screen and (max-width: 768px) {
     .skills-cards-container {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
+/* Media query for responsiveness */
+@media screen and (max-width: 470px) {
+    .skills-cards-container {
+        grid-template-columns:  1fr;
+    }
+}
 
 
 
@@ -400,7 +412,7 @@ body.dark-theme {
 
 .project-card {
     padding: 10px;
-    margin-top: 15px;
+    margin-top: 25px;
     /* border:1px solid red; */
 }
 
@@ -449,8 +461,8 @@ body.dark-theme {
 #resume-button-1 {
     padding: 10px;
     margin: auto;
-    width: 8%;
-    /* border:1px solid rgb(198, 149, 149); */
+    /* border:0px; */
+    background-color:  hsl(207, 4%, 99%);;
 
 }
 
