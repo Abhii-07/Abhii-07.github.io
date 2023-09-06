@@ -260,13 +260,13 @@ body.dark-theme {
     margin-bottom: .5rem;
 }
 
-/* #user-detail-intro {
+#user-detail-intro {
     text-align: center;
-    font-size: var(--h1-font-size);
+    font-size: var(--h3-font-size);
     letter-spacing: .3px;
     margin-bottom: .5rem;
     /* border:1px solid red; */
-/* } */
+ } 
 
 */ .home__social {
     margin-top: 10px;
