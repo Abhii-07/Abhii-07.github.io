@@ -64,8 +64,9 @@ body {
     background-color: var(--body-color);
     color: var(--text-color);
     transition: background .4s;
-    background-color: #FFF0F5;
-
+    /* background-color: #FFF0F5; */
+    background: rgb(238, 174, 225);
+    background: radial-gradient(circle, rgba(238, 174, 225, 0.9752275910364145) 9%, rgba(179, 148, 233, 0.6502976190476191) 91%);
 }
 
 h1,
@@ -117,7 +118,7 @@ nav-link resume {
     font-size: var(--smaller-font-size);
     color: var(--text-color-light);
     transition: color .3s;
-    background-color: #FFF0F5;
+    background-color: FACBEA;
 }
 
 .nav-link home,
@@ -127,7 +128,7 @@ nav-link projects,
 nav-link contact,
 nav-link resume:hover {
     color: var(--title-color);
-    background-color: #FFF0F5;
+    background-color: FACBEA;
 }
 
 .nav-link home,
@@ -137,7 +138,7 @@ nav-link projects,
 nav-link contact,
 nav-link resume i {
     font-size: 1.25rem;
-    background-color: #FFF0F5;
+    background-color: FACBEA;
 }
 
 /* #nav-menu > div{
@@ -231,7 +232,8 @@ body.dark-theme {
 .home-img {
     margin: auto;
     height: 80%;
-    /* border:1px solid red; */
+    border:1px solid white;
+    border-radius: 50%;
 }
 
 #home>div {
@@ -247,7 +249,7 @@ body.dark-theme {
     justify-content: space-evenly;
     margin-top: 20px;
     padding: 15px;
-    
+
     /* border:1px solid red; */
     /* display: grid; */
     /* row-gap: 2rem; */
@@ -266,7 +268,7 @@ body.dark-theme {
     letter-spacing: .3px;
     margin-bottom: .5rem;
     /* border:1px solid red; */
- } 
+}
 
 */ .home__social {
     margin-top: 10px;
@@ -314,7 +316,7 @@ body.dark-theme {
 }
 
 /* Global styles */
-#skills{
+#skills {
     margin-top: 20px;
 }
 
@@ -323,6 +325,7 @@ body.dark-theme {
     padding: 15px;
     text-decoration: underline;
 }
+
 .skills-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -359,6 +362,8 @@ body.dark-theme {
     padding-top: 10px;
     padding-bottom: 10px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border: 1px solid white;
+    border-radius: 20px;
 }
 
 .skills-card-img {
@@ -372,7 +377,7 @@ body.dark-theme {
 
 .skills-card:hover {
     transform: translateY(-5px);
-  }
+}
 
 /* Media query for responsiveness */
 @media screen and (max-width: 768px) {
@@ -384,7 +389,7 @@ body.dark-theme {
 /* Media query for responsiveness */
 @media screen and (max-width: 470px) {
     .skills-cards-container {
-        grid-template-columns:  1fr;
+        grid-template-columns: 1fr;
     }
 }
 
@@ -462,7 +467,8 @@ body.dark-theme {
     padding: 10px;
     margin: auto;
     /* border:0px; */
-    background-color:  hsl(207, 4%, 99%);;
+    background-color: hsl(207, 4%, 99%);
+    ;
 
 }
 
@@ -719,4 +725,3 @@ body.dark-theme {
         display: none;
     }
 }
-
